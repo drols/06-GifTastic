@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Reactionary Gifs!</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col jumbotron header">
+        <h1>Find your reaction Gif!</h1>
+      </div>
+    </div>
+
+    <div class="row">
+    <!-- Rendered buttons will get dumped Here  -->
+      <div class="col-md-6">
+        <div id="buttons-view"></div>
+        <form id="reaction-form">
+
+            <input id="reaction-input" type="text" placeholder="Find a Reaction!">
+            <input id="add-reaction-btn" class="btn btn-primary" type="submit" value="Add a Reaction">
+        </form>
+      </div>
+
+    </div>
+
+    <div id="render-gifs" class="row"></div>
+    <div id="appended-reactions"></div>
+
+   
+  </div>
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/javascript.js"></script>
+
+
+
+</body>
+
+</html>
